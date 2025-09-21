@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mood Tracker</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- 🌐 Navbar -->
+  <header>
+    <nav class="navbar">
+      <h1> Mood Tracker</h1>
+      <ul>
+        <li><a href="#" onclick="showPage('home')">🏠 Home</a></li>
+        <li><a href="#" onclick="showPage('track')">📝 Track Mood</a></li>
+        <li><a href="#" onclick="showPage('dashboard')">📊 Dashboard</a></li>
+        <li><a href="#" onclick="showPage('tips')">💡 Tips</a></li>
+        <li><a href="#" onclick="showPage('about')">ℹ️ About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- 🏠 Home Section -->
+  <section id="home" class="page active">
+    <h2>Welcome 👋</h2>
+    <p>Track your daily moods and reflect on your well-being 🌟</p>
+    <button onclick="showPage('track')">Start Tracking ➡️</button>
+  </section>
+
+  <!-- 😀 Track Mood Section -->
+  <section id="track" class="page">
+    <h2>How are you feeling today?</h2>
+    <div class="mood-options">
+      <button onclick="logMood('😊')">😊 Happy</button>
+      <button onclick="logMood('😢')">😢 Sad</button>
+      <button onclick="logMood('😡')">😡 Angry</button>
+      <button onclick="logMood('😴')">😴 Tired</button>
+      <button onclick="logMood('😐')">😐 Neutral</button>
+      <button onclick="logMood('🤩')">🤩 Excited</button>
+    </div>
+  </section>
+
+  <!-- 📊 Dashboard Section -->
+  <section id="dashboard" class="page">
+    <h2>Your Mood Dashboard</h2>
+    <canvas id="moodChart"></canvas>
+    <p class="note">✨ Your moods are stored locally on this device.</p>
+  </section>
+
+  <!-- 💡 Tips Section -->
+  <section id="tips" class="page">
+    <h2>Self-Care Tips 🌿</h2>
+    <ul>
+      <li>🚶 Take a 10-minute walk outside</li>
+      <li>📓 Write down 3 things you’re grateful for</li>
+      <li>🎶 Listen to calming music</li>
+      <li>🌬️ Practice deep breathing for 2 minutes</li>
+      <li>☕ Take a mindful tea/coffee break</li>
+    </ul>
+  </section>
+
+  <!-- ℹ️ About Section -->
+  <section id="about" class="page">
+    <h2>About This Project ℹ️</h2>
+    <p>
+      This Mood Tracker helps you monitor your emotions daily 
+      and visualize trends over time.  
+    </p>
+  </section>
+
+  <!-- 📜 Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

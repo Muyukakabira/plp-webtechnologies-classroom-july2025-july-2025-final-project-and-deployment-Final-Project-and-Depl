@@ -88,3 +88,18 @@ Deploy your project and confirm that:
 * Clean, well-organized, and commented code
 * Successful live deployment with a working link
 * Evidence of following best practices
+
+# Mood Tracker Website
+
+
+##  How the Mood Tracker Works
+1. Open the site (link).
+2. Navigate using the menu (🏠 Home, 📝 Track Mood, 📊 Dashboard, 💡 Tips, ℹ️ About).
+3. On **Track Mood**, select an emoji that matches your feeling.
+4. Your choice is saved locally (browser storage).
+5. Go to **Dashboard** to view a bar chart of your moods over time.
+6. Explore **Tips** for self-care ideas.
+
+---
+
+
